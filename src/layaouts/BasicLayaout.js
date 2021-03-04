@@ -1,10 +1,12 @@
 import React from 'react'
+import Menu from '../components/Menu';
+
 
 export default function BasicLayaout(props) {
-    const {children} = props;
+    const {children, MenuColor} = props;
     return (
         <div>
-            <h1>MENU</h1>
+            <Menu MenuColor={MenuColor}  />
             {children}
         </div>
     )
