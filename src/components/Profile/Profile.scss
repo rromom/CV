@@ -47,8 +47,13 @@
                 font-size:  40px;
             }
             .more__info {
+               
                 .item {
                     display: flex;
+                    
+                    .icon {
+                        width:5% ;
+                    }
 
                     p{
                         &:first-of-type {
@@ -57,7 +62,7 @@
                          text-transform: uppercase;
                         }
                         &:last-of-type {
-                            width: 60%;
+                            width: 70%;
                             color: gray;
                         }
                     }

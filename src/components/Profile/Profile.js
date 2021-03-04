@@ -2,32 +2,35 @@
 import React from 'react'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { library } from '@fortawesome/fontawesome-svg-core'
 
 
 import { Col, Container, Image, Row } from 'react-bootstrap'
 import profileImage from "../../images/avatar.jpg"
 
-import {faCoffee, faMobileAlt } from '@fortawesome/free-solid-svg-icons'
-
+import { faMobileAlt,faMale,faMapMarkedAlt, faEnvelopeOpen} from '@fortawesome/free-solid-svg-icons'
 import "./Profile.scss"
-library.add(faMobileAlt)
 
+const icons = {faMobileAlt,faMale,faMapMarkedAlt,faEnvelopeOpen}
 const data = [ 
     {
-        title: "Edad",
-        info: "21",
-        icon: "faMobileAlt"
+        title: "Edad:",
+        info: "21 Años",
+        icon: icons.faMale
     },
     {
-        title: "Dirección",
+        title: "Dirección:",
         info: "Av. Zumbagua y Tocachi Conjuntos Altos de Hierba Buena  Casa F8",
-        icon: "faMobileAlt"
+        icon: icons.faMapMarkedAlt
     },
     {
-        title: "Telefono",
+        title: "Telefono:",
         info: "+593 97 921 6418",
-        icon: "faMobileAlt"
+        icon: icons.faMobileAlt
+    },
+    {
+        title: "E-mail:",
+        info: "patrixio_1999@hotmail.com / rromom@ups.edu.ec",
+        icon: icons.faEnvelopeOpen
     }
 ]
 
@@ -51,7 +54,7 @@ export default function Profile() {
                            {data.map((item,index)=>(
                                 <div key={index} className="item">
                                     <div className="icon"><FontAwesomeIcon icon={item.icon} /></div>
-                                    <p>{item.title}: </p>
+                                    <p>{item.title} </p>
                                     <p>{item.info}</p>
                                 </div>
                            ))}
