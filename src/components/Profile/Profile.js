@@ -2,12 +2,14 @@
 import React from 'react'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMobileAlt,faMale,faMapMarkedAlt, faEnvelopeOpen} from '@fortawesome/free-solid-svg-icons'
 
 
 import { Col, Container, Image, Row } from 'react-bootstrap'
 import profileImage from "../../images/avatar.jpg"
+import Social from './Social'
 
-import { faMobileAlt,faMale,faMapMarkedAlt, faEnvelopeOpen} from '@fortawesome/free-solid-svg-icons'
+
 import "./Profile.scss"
 
 const icons = {faMobileAlt,faMale,faMapMarkedAlt,faEnvelopeOpen}
@@ -61,6 +63,7 @@ export default function Profile() {
                        </div>
                    </Col>
                </Row>
+               <Social></Social>
            </Container>
         </div>
     )
