@@ -1,7 +1,9 @@
 import React from 'react'
-import SkillBar from 'react-skillbars'
-
+import loadable from "@loadable/component"
 import "./ListSkills.scss"
+
+const SkillBar = loadable(()=>import("react-skillbars"))
+
 export default function ListSkills(props) {
     const {skills, colors} = props
     return (
