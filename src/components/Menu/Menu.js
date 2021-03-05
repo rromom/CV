@@ -14,7 +14,7 @@ export default function Menu(props) {
                        <Link to="/">Inicio</Link>
                    </li>
                    <li>
-                       <Link to="/skills">Skills</Link>
+                       <Link to="/Skills">Skills</Link>
                    </li>
                    <li>
                        <Link to="/projects">Proyectos</Link>

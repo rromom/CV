@@ -15,7 +15,7 @@ export default function AboutMe() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio labore molestias id, blanditiis reiciendis cumque, architecto quidem temporibus aspernatur ipsum tempore saepe? Magnam mollitia neque dolores perspiciatis ea aliquid aut?
             </p>
             <hr/>
-            <a href={CV} target="_blank">
+            <a href={CV} target="_blank" rel="noreferrer">
             <Button primary>Descargar CV</Button>
             </a>
                 
