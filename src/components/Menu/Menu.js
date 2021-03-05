@@ -17,7 +17,7 @@ export default function Menu(props) {
                        <Link to="/Skills">Skills</Link>
                    </li>
                    <li>
-                       <Link to="/projects">Proyectos</Link>
+                       <Link to="/Projects">Proyectos</Link>
                    </li>
                </ul>
            </Container>
