@@ -4,5 +4,12 @@
         display: inline-block;
         margin-right: 20px;
 
+        &:ntd-child(2n) {
+            margin-left: 20px;
+            margin-right: 0;
+
+        }
+        
+
     }
 }

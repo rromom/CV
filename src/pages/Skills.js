@@ -3,12 +3,7 @@ import BasicLayaout from '../layaouts/BasicLayaout'
 import { Container } from 'react-bootstrap'
 import "./skills.scss"
 import ListSkills from '../components/ListSkills'
-
-const skills = [
-    {type: "Java", level: 85},
-    {type: "Javascript", level: 75},
-  ];
-  
+import {fronendskills, frontendskillscolor} from "../utils/skills"
 
 export default function Skills() {
     return (
@@ -16,7 +11,7 @@ export default function Skills() {
             <Container className="skills">
                 <div className="skills:_block">
                     <h2>Frontend</h2>
-                    <ListSkills skills={skills}/>
+                    <ListSkills skills={fronendskills} colors={frontendskillscolor}/>
                 </div>
             </Container>
         </BasicLayaout>
