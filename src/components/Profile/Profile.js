@@ -2,7 +2,8 @@
 import React from 'react'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMobileAlt,faMale,faMapMarkedAlt, faEnvelopeOpen} from '@fortawesome/free-solid-svg-icons'
+import { faMobileAlt,faMale,faMapMarkedAlt, faEnvelopeOpen, faUserTie,
+faSchool,faGlobeAmericas, faHeart, faCalendarDay,faIdCard, faMapPin} from '@fortawesome/free-solid-svg-icons'
 
 
 import { Col, Container, Image, Row } from 'react-bootstrap'
@@ -12,27 +13,51 @@ import Social from './Social'
 
 import "./Profile.scss"
 
-const icons = {faMobileAlt,faMale,faMapMarkedAlt,faEnvelopeOpen}
-const data = [ 
+const data = [
     {
-        title: "Edad:",
-        info: "21 Años",
-        icon: icons.faMale
+        title: "Formación:",
+        info: "Ciencias de la Computación (Ing. Sistemas) / 8vo Nivel",
+        icon: faSchool
+    },
+    {
+        title: "Identificación:",
+        info: "1718976606",
+        icon: faIdCard
+    },
+    {
+        title: "Nacionalidad:",
+        info: "Ecuatoriano",
+        icon: faGlobeAmericas
     },
     {
         title: "Dirección:",
-        info: "Av. Zumbagua y Tocachi Conjuntos Altos de Hierba Buena  Casa F8",
-        icon: icons.faMapMarkedAlt
+        info: "Zumbagua, Quito 170141",
+        icon: faMapMarkedAlt
     },
     {
-        title: "Telefono:",
+        title: "Teléfono:",
         info: "+593 97 921 6418",
-        icon: icons.faMobileAlt
+        icon: faMobileAlt
     },
     {
         title: "E-mail:",
         info: "patrixio_1999@hotmail.com / rromom@ups.edu.ec",
-        icon: icons.faEnvelopeOpen
+        icon: faEnvelopeOpen
+    },
+    {
+        title: "Estado Civil:",
+        info: "Soltero",
+        icon: faHeart
+    },
+    {
+        title: "Fecha Nacimiento:",
+        info: "15/Marzo/1999",
+        icon: faCalendarDay
+    },
+    {
+        title: "Lugar de Nacimiento:",
+        info: "Loja / Loja / Ecuador",
+        icon: faMapPin
     }
 ]
 
@@ -48,9 +73,7 @@ export default function Profile() {
                    </Col>
                    <Col xs={12} md={8} className="info__data">
                        <span>¡HELLO WORLD XD!</span>
-                       <p>Ricardo Romo Mejia</p>
-                       <p>Estudiante Universitario</p>
-                       
+                       <p><FontAwesomeIcon icon={faUserTie} /> Ricardo Patricio Romo Mejia</p>
                        <hr/>
                        <div className="more__info">
                            {data.map((item,index)=>(
