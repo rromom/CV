@@ -5,7 +5,6 @@ import "./Projects.scss"
 import projects from "../utils/projects"
 
 export default function Projects() {
-    console.log(projects)
     return (
         <BasicLayaout MenuColor="#000">
             <Container className="projects">

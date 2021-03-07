@@ -5,7 +5,6 @@ import React from 'react'
 import "./Menu.scss"
 
 export default function Menu(props) {
-    const {MenuColor} = props;
     return (
        <header className="menu" style={{backgroundColor: 'darkcyan'}}>
            <Container>

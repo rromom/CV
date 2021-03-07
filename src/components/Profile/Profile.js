@@ -2,7 +2,7 @@
 import React from 'react'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMobileAlt,faMale,faMapMarkedAlt, faEnvelopeOpen, faUserTie,
+import { faMobileAlt,faMapMarkedAlt, faEnvelopeOpen, faUserTie,
 faSchool,faGlobeAmericas, faHeart, faCalendarDay,faIdCard, faMapPin} from '@fortawesome/free-solid-svg-icons'
 
 
@@ -83,7 +83,7 @@ export default function Profile() {
                                     <p>{item.info}</p>
                                 </div>
                            ))}
-                       </div>
+                       </div> 
                    </Col>
                </Row>
                <Social></Social>
